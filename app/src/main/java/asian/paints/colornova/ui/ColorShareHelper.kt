@@ -82,13 +82,13 @@ object ColorShareHelper {
                 putExtra(Intent.EXTRA_STREAM, contentUri)
                 val caption = buildString {
                     append("${colorItem.name} (${colorItem.id}) • Page ${colorItem.page} • ${colorItem.hex}\n")
-                    append("Asian Paints Spectra Fan Deck • ColorNova")
+                    append("Color Nova Fan Deck")
                     if (userNote.isNotBlank()) {
                         append("\nNote: $userNote")
                     }
                 }
                 putExtra(Intent.EXTRA_TEXT, caption)
-                putExtra(Intent.EXTRA_SUBJECT, "Asian Paints Shade: ${colorItem.name} (${colorItem.id})")
+                putExtra(Intent.EXTRA_SUBJECT, "Color Nova Shade: ${colorItem.name} (${colorItem.id})")
                 addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
                 addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             }
@@ -132,7 +132,7 @@ object ColorShareHelper {
             isAntiAlias = true
             letterSpacing = 0.15f
         }
-        canvas.drawText("COLORNOVA • ASIAN PAINTS SPECTRA", 60f, 95f, headerPaint)
+        canvas.drawText("COLOR NOVA", 60f, 95f, headerPaint)
 
         val pageTagPaint = Paint().apply {
             this.color = android.graphics.Color.parseColor("#94A3B8")
@@ -224,7 +224,7 @@ object ColorShareHelper {
             isAntiAlias = true
             textAlign = Paint.Align.RIGHT
         }
-        canvas.drawText("Spectra ${colorItem.category.displayName} • Page ${colorItem.page}", width - 60f, 850f, catTextPaint)
+        canvas.drawText("Color Nova ${colorItem.category.displayName} • Page ${colorItem.page}", width - 60f, 850f, catTextPaint)
 
         // 5. Specs Panel (Card)
         val specsTop = 880f
@@ -286,13 +286,13 @@ object ColorShareHelper {
             isAntiAlias = true
             letterSpacing = 0.1f
         }
-        val noteLabel = if (userNote.isNotBlank()) "CLIENT SPECIFICATION / APPLICATION NOTE:" else "ASIAN PAINTS SPECTRA FANDECK SPECIFICATION:"
+        val noteLabel = if (userNote.isNotBlank()) "CLIENT SPECIFICATION / APPLICATION NOTE:" else "COLOR NOVA FANDECK SPECIFICATION:"
         canvas.drawText(noteLabel, 95f, noteTop + 45f, noteHeaderPaint)
 
         val displayText = if (userNote.isNotBlank()) {
             userNote
         } else {
-            "Certified Asian Paints Spectra fan deck shade ${colorItem.id} (${colorItem.name}) from Page ${colorItem.page}. Curated 1,747 professional architectural color system."
+            "Certified Color Nova fan deck shade ${colorItem.id} (${colorItem.name}) from Page ${colorItem.page}. Curated 1,747 professional architectural color system."
         }
 
         val noteContentPaint = TextPaint().apply {

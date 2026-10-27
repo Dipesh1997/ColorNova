@@ -30,7 +30,7 @@ data class ColorItem(
     val rgb: String = calculateRgb(hex),
     val hsl: String = calculateHsl(hex),
     val tags: List<String> = generateTags(hex, page),
-    val description: String = "Asian Paints Spectra shade $id • Page $page"
+    val description: String = "Color Nova shade $id • Page $page"
 ) {
     fun toComposeColor(): Color {
         val cleanHex = hex.removePrefix("#")
@@ -234,7 +234,7 @@ object SampleColorRepository {
             harmonyType = "Curated 7-Color Strip",
             moodTag = "Stratos & Sands of Thar",
             colors = seedComboColors.take(7),
-            description = "Curated 7-color harmony strip from Asian Paints Spectra fan deck page 208.",
+            description = "Curated 7-color harmony strip from Color Nova fan deck page 208.",
             page = 208
         ),
         ColorPalette(
@@ -243,7 +243,7 @@ object SampleColorRepository {
             harmonyType = "Curated 7-Color Strip",
             moodTag = "Camellia Bud & Moonlight River",
             colors = seedComboColors.drop(7).take(7),
-            description = "Curated 7-color harmony strip from Asian Paints Spectra fan deck page 209.",
+            description = "Curated 7-color harmony strip from Color Nova fan deck page 209.",
             page = 209
         )
     )
@@ -290,7 +290,7 @@ object SampleColorRepository {
                     hex = hex,
                     category = category,
                     page = page,
-                    description = "Asian Paints Spectra shade $code (Page $page)"
+                    description = "Color Nova shade $code (Page $page)"
                 )
             }
 
@@ -351,7 +351,7 @@ object SampleColorRepository {
                             id = paletteObj.optString("i", paletteObj.optString("id", "P$page")),
                             name = paletteObj.optString("n", paletteObj.optString("name", "Page $page Harmony")),
                             harmonyType = paletteObj.optString("ht", paletteObj.optString("harmonyType", "Curated 7-Color Strip")),
-                            moodTag = paletteObj.optString("m", paletteObj.optString("moodTag", "Asian Paints Fan Deck")),
+                            moodTag = paletteObj.optString("m", paletteObj.optString("moodTag", "Color Nova Fan Deck")),
                             colors = paletteColors,
                             description = paletteObj.optString("d", paletteObj.optString("description", "Curated combination from page $page")),
                             page = page

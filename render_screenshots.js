@@ -1054,12 +1054,12 @@ const lightColorsHtml = `
 
 const page1Html = generateHtmlPage({
   headline: 'Explore 102 Light Shades',
-  subtitle: 'Spectra Fan Deck Pages 1 to 17 • Curate soft off-whites & pastels with page numbers',
+  subtitle: 'Color Nova Fan Deck Pages 1 to 17 • Curate soft off-whites & pastels with page numbers',
   tagText: 'LIGHT TAB • PAGES 1 TO 17',
   tagColor: '#FFD54F',
   bgGlow1: 'rgba(255, 213, 79, 0.4)',
   bgGlow2: 'rgba(78, 205, 196, 0.25)',
-  badgeText1: '102 Asian Paints Shades',
+  badgeText1: '102 Color Nova Shades',
   badgeText2: 'Page Number on Every Shade',
   phoneProps: {
     activeTab: 'LIGHT',
@@ -1162,7 +1162,7 @@ const inspectionModalHtml = `
     <div class="modal-code-row">
       <div class="modal-code-left">
         <span class="modal-code-lbl">PAGE</span>
-        <span class="modal-code-val">Page 60 (Asian Paints Spectra)</span>
+        <span class="modal-code-val">Page 60 (Color Nova)</span>
       </div>
       <span style="color:#4ECDC4">${icons.copy}</span>
     </div>
@@ -1193,7 +1193,7 @@ const inspectionModalHtml = `
 
 const page2Html = generateHtmlPage({
   headline: '1,319 Medium Shades',
-  subtitle: 'Spectra Fan Deck Pages 18 to 182 • Comprehensive inspection and codes',
+  subtitle: 'Color Nova Fan Deck Pages 18 to 182 • Comprehensive inspection and codes',
   tagText: 'MEDIUM TAB • PAGES 18 TO 182',
   tagColor: '#FF6B6B',
   bgGlow1: 'rgba(255, 107, 107, 0.45)',
@@ -1320,7 +1320,7 @@ const darkColorsHtml = `
 
 const page3Html = generateHtmlPage({
   headline: '200 Deep & Dark Tones',
-  subtitle: 'Spectra Fan Deck Pages 183 to 207 • Deep moody accents & architectural slates',
+  subtitle: 'Color Nova Fan Deck Pages 183 to 207 • Deep moody accents & architectural slates',
   tagText: 'DARK TAB • PAGES 183 TO 207',
   tagColor: '#A18CD1',
   bgGlow1: 'rgba(161, 140, 209, 0.45)',
@@ -1344,7 +1344,7 @@ const combinationsHtml = `
       <div class="palette-top">
         <div>
           <div class="palette-name">Page 208 Harmony</div>
-          <div class="palette-sub">Spectra Combo • Page 208 • 7 Curated Shades</div>
+          <div class="palette-sub">Color Nova Combo • Page 208 • 7 Curated Shades</div>
         </div>
         <div class="palette-copy-all">
           <span style="color:#4ECDC4">${icons.copy}</span>
@@ -1375,7 +1375,7 @@ const combinationsHtml = `
         </div>
       </div>
       <div class="palette-desc">
-        Curated 7-color harmony strip from Asian Paints Spectra fan deck page 208: Stratos & Sands of Thar.
+        Curated 7-color harmony strip from Color Nova fan deck page 208: Stratos & Sands of Thar.
       </div>
       <div class="palette-pills">
         <div class="color-pill-tag">
@@ -1397,7 +1397,7 @@ const combinationsHtml = `
       <div class="palette-top">
         <div>
           <div class="palette-name">Page 209 Harmony</div>
-          <div class="palette-sub">Spectra Combo • Page 209 • 7 Curated Shades</div>
+          <div class="palette-sub">Color Nova Combo • Page 209 • 7 Curated Shades</div>
         </div>
         <div class="palette-copy-all">
           <span style="color:#4ECDC4">${icons.copy}</span>
@@ -1428,7 +1428,7 @@ const combinationsHtml = `
         </div>
       </div>
       <div class="palette-desc">
-        Curated 7-color harmony strip from Asian Paints Spectra fan deck page 209: Camellia Bud & Moonlight River.
+        Curated 7-color harmony strip from Color Nova fan deck page 209: Camellia Bud & Moonlight River.
       </div>
       <div class="palette-pills">
         <div class="color-pill-tag">
@@ -1450,12 +1450,12 @@ const combinationsHtml = `
 
 const page4Html = generateHtmlPage({
   headline: '18 Curated Combos',
-  subtitle: 'Spectra Fan Deck Pages 208 to 225 • 7-shade harmonized room combos',
+  subtitle: 'Color Nova Fan Deck Pages 208 to 225 • 7-shade harmonized room combos',
   tagText: 'COMBO TAB • PAGES 208 TO 225',
   tagColor: '#4ECDC4',
   bgGlow1: 'rgba(78, 205, 196, 0.45)',
   bgGlow2: 'rgba(255, 107, 107, 0.3)',
-  badgeText1: '18 Spectra Harmonies',
+  badgeText1: '18 Color Nova Harmonies',
   badgeText2: '126 Curated Combination Shades',
   phoneProps: {
     activeTab: 'COMBINATION',

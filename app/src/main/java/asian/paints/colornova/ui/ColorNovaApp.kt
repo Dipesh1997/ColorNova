@@ -1726,7 +1726,7 @@ fun FullScreenColorView(
                             )
                         }
 
-                        // Spectra Page Pill
+                        // Color Nova Page Pill
                         Box(
                             modifier = Modifier
                                 .clip(RoundedCornerShape(12.dp))
@@ -1734,7 +1734,7 @@ fun FullScreenColorView(
                                 .padding(horizontal = 12.dp, vertical = 6.dp)
                         ) {
                             Text(
-                                text = "ASIAN PAINTS SPECTRA • PAGE ${color.page}",
+                                text = "COLOR NOVA • PAGE ${color.page}",
                                 fontSize = 11.sp,
                                 fontWeight = FontWeight.Bold,
                                 color = Color.White,
@@ -2866,7 +2866,7 @@ fun ColorDetailSheet(
 
             CodeCopyRow(
                 label = "PAGE",
-                value = "Page ${color.page} (Asian Paints Spectra)",
+                value = "Page ${color.page} (Color Nova)",
                 onCopy = { onCopy(color.page.toString(), "PAGE") }
             )
 
